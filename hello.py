@@ -1,38 +1,3 @@
-"""
-ANGRY CALCULUS
-==============
-Un "Angry Birds" donde la trayectoria del pájaro NO se controla con el mouse,
-sino que TÚ escribes directamente la función f(x) que define el vuelo.
-
-Ejemplos válidos que puedes escribir:
-    -0.15*x**2 + 3*x
-    -0.2x^2 + 4x            (multiplicación implícita y ^ también funcionan)
-    2*sin(x) + x
-    -0.05*x**2 + 2*x + 1
-    5*exp(-0.2*x)*sin(x)
-
-Conceptos de cálculo diferencial usados de verdad (no de adorno):
-
-  - La curva que ves ES f(x): el pájaro literalmente vuela sobre tu función.
-  - f'(x) se calcula simbólicamente con sympy en cuanto escribes la función.
-  - f'(0) es la pendiente inicial: la dirección con la que "sale disparado"
-    el pájaro (se dibuja como la recta tangente amarilla en x=0).
-  - Con la tecla TAB se abre una tabla que muestra cómo el cociente
-    incremental (f(0+h) - f(0)) / h converge a f'(0) cuando h -> 0,
-    es decir, la definición formal de derivada como límite.
-
-Controles:
-  (escribe)  -> vas armando el texto de tu función f(x)
-  BACKSPACE  -> borra el último carácter
-  ENTER      -> intenta lanzar con la función actual (si es válida)
-  TAB        -> muestra / oculta la tabla de límites
-  R          -> continuar tras un intento / reiniciar
-  ESC        -> salir (y exporta los CSV)
-
-Requisitos: pygame, sympy, pandas, numpy
-    pip install pygame sympy pandas numpy
-"""
-
 import math
 import pygame
 import pymunk
